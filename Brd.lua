@@ -216,7 +216,7 @@ function init_gear_sets()
     body="Inyanga Jubbah +2",
     hands={ name="Gende. Gages +1", augments={'Phys. dmg. taken -3%','Magic dmg. taken -3%','Song spellcasting time -5%',}},
     legs="Aya. Cosciales +2",
-    feet="Brioso Slippers +1",
+    feet="Brioso Slippers +2",
     neck="Loricate Torque +1",
     waist="Flume Belt +1",
     left_ear="Etiolation Earring",
@@ -300,12 +300,22 @@ function init_gear_sets()
     sets.midcast.Etude = {head="Mousai Turban +1"}
     sets.midcast.HonorMarch = {range="Marsyas", hands="Fili Manchettes +1"}
     sets.midcast.Lullaby = {
-      body="Fili Hongreline +1",
-      --hands="Brioso Cuffs +3",
-      legs="Inyanga Shalwar +2",
-	  hands={ name="Chironic Gloves", augments={'Crit. hit damage +3%','MND+13','"Treasure Hunter"+2','Mag. Acc.+10 "Mag.Atk.Bns."+10',}},
-      feet={ name="Chironic Slippers", augments={'"Fast Cast"+2','MND+5','"Treasure Hunter"+2',}}
-    }
+	main={ name="Kali", augments={'Mag. Acc.+15','String instrument skill +10','Wind instrument skill +10',}},
+    sub="Genbu's Shield",
+    range="Gjallarhorn",
+    head="Brioso Roundlet +2",
+    body="Fili Hongreline +1",
+    hands="Brioso Cuffs +2",
+    legs="Inyanga Shalwar +2",
+    feet="Brioso Slippers +2",
+    neck="Moonbow Whistle +1",
+    waist="Acuity Belt +1",
+    left_ear="Gwati Earring",
+    right_ear="Enchntr. Earring +1",
+    left_ring="Stikini Ring +1",
+    right_ring="Metamor. Ring +1",
+    back={ name="Intarabus's Cape", augments={'CHR+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','"Fast Cast"+10',}},
+	}
     sets.midcast.Madrigal = {head="Fili Calot +1"}
     sets.midcast.Mambo = {feet="Mousai Crackows +1"}
     sets.midcast.March = {hands="Fili Manchettes +1"}
@@ -328,8 +338,8 @@ function init_gear_sets()
     body="Fili Hongreline +1",
     hands="Fili Manchettes +1",
     legs="Inyanga Shalwar +2",
-    feet="Brioso Slippers +1",
-    neck="Moonbow Whistle",
+    feet="Brioso Slippers +2",
+    neck="Moonbow Whistle +1",
     waist="Flume Belt +1",
     left_ear="Musical Earring",
     right_ear="Etiolation Earring",
@@ -343,12 +353,12 @@ function init_gear_sets()
     main={ name="Kali", augments={'Mag. Acc.+15','String instrument skill +10','Wind instrument skill +10',}},
     sub="Genbu's Shield",
     range="Gjallarhorn",
-    head="Brioso Roundlet +1",
+    head="Brioso Roundlet +2",
     body="Brioso Just. +1",
-    hands="Brioso Cuffs +1",
+    hands="Brioso Cuffs +2",
     legs="Brioso Cann. +1",
-    feet="Brioso Slippers +1",
-    neck="Moonbow Whistle",
+    feet="Brioso Slippers +2",
+    neck="Moonbow Whistle +1",
     waist="Acuity Belt +1",
     left_ear="Gwati Earring",
     right_ear="Enchntr. Earring +1",
@@ -362,7 +372,7 @@ function init_gear_sets()
 
     -- For Horde Lullaby maxiumum AOE range.
     sets.midcast.SongStringSkill = {
-      hands="Brioso Cuffs +1",
+      hands="Brioso Cuffs +2",
       ring1="Stikini Ring +1",}
 
     -- Placeholder song; minimize duration to make it easy to overwrite.
@@ -375,7 +385,7 @@ function init_gear_sets()
     hands="Fili Manchettes +1",
     legs="Aya. Cosciales +2",
     feet={ name="Telchine Pigaches", augments={'Song spellcasting time -7%',}},
-    neck="Moonbow Whistle",
+    neck="Moonbow Whistle +1",
     waist="Flume Belt +1",
     left_ear="Etiolation Earring",
     right_ear="Enchntr. Earring +1",
@@ -414,12 +424,12 @@ function init_gear_sets()
     main={ name="Kali", augments={'Mag. Acc.+15','String instrument skill +10','Wind instrument skill +10',}},
     sub="Genbu's Shield",
     range="Gjallarhorn",
-    head="Brioso Roundlet +1",
+    head="Brioso Roundlet +2",
     body="Brioso Just. +1",
-    hands="Brioso Cuffs +1",
+    hands="Brioso Cuffs +2",
     legs="Brioso Cann. +1",
-    feet="Brioso Slippers +1",
-    neck="Moonbow Whistle",
+    feet="Brioso Slippers +2",
+    neck="Moonbow Whistle +1",
     waist="Acuity Belt +1",
     left_ear="Gwati Earring",
     right_ear="Enchntr. Earring +1",
@@ -795,13 +805,13 @@ end
 -- Modify the default melee set after it was constructed.
 function customize_melee_set(meleeSet)
     if state.WeaponSet.value == "Carnwenhan" then
-        equip({main="Carnwenhan",sub="Taming Sari"})
+        equip({main="Carnwenhan",sub="Centovente"})
     elseif state.WeaponSet.value == "Twashtar" then
         equip({main="Twashtar",sub="Centovente"})
     elseif state.WeaponSet.value == "Naegling" then
         equip({main="Naegling",sub="Centovente"})
     elseif state.WeaponSet.value == "Tauret" then
-        equip({main="Tauret",sub="Taming Sari"})
+        equip({main="Tauret",sub="Centovente"})
     end
     if buffactive['Aftermath: Lv.3'] and player.equipment.main == "Carnwenhan" then
         meleeSet = set_combine(meleeSet, sets.engaged.Aftermath)
