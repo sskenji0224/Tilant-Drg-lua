@@ -187,7 +187,23 @@ function init_gear_sets()
     ------------------------------------------------------------------------------------------------
 
     -- Fast cast sets for spells
-    sets.precast.FC = {}
+    sets.precast.FC = {
+	main={ name="Kali", augments={'Mag. Acc.+15','String instrument skill +10','Wind instrument skill +10',}},
+    sub="Genbu's Shield",
+    range="Gjallarhorn",
+    head="Fili Calot +1",
+    body="Inyanga Jubbah +2",
+    hands={ name="Gende. Gages +1", augments={'Phys. dmg. taken -3%','Magic dmg. taken -3%','Song spellcasting time -5%',}},
+    legs="Aya. Cosciales +2",
+    feet="Brioso Slippers +2",
+    neck="Loricate Torque +1",
+    waist="Flume Belt +1",
+    left_ear="Etiolation Earring",
+    right_ear="Enchntr. Earring +1",
+    left_ring="Kishar Ring",
+    right_ring="Defending Ring",
+    back={ name="Intarabus's Cape", augments={'CHR+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','"Fast Cast"+10',}},
+	}
 
     sets.precast.FC['Enhancing Magic'] = set_combine(sets.precast.FC, {
     })
@@ -211,7 +227,6 @@ function init_gear_sets()
     sets.precast.FC.BardSong = {
       main={ name="Kali", augments={'Mag. Acc.+15','String instrument skill +10','Wind instrument skill +10',}},
     sub="Genbu's Shield",
-    range="Gjallarhorn",
     head="Fili Calot +1",
     body="Inyanga Jubbah +2",
     hands={ name="Gende. Gages +1", augments={'Phys. dmg. taken -3%','Magic dmg. taken -3%','Song spellcasting time -5%',}},
@@ -302,7 +317,7 @@ function init_gear_sets()
     sets.midcast.Lullaby = {
 	main={ name="Kali", augments={'Mag. Acc.+15','String instrument skill +10','Wind instrument skill +10',}},
     sub="Genbu's Shield",
-    range="Gjallarhorn",
+    range="Daurdabla",
     head="Brioso Roundlet +2",
     body="Fili Hongreline +1",
     hands="Brioso Cuffs +2",
@@ -310,8 +325,8 @@ function init_gear_sets()
     feet="Brioso Slippers +2",
     neck="Moonbow Whistle +1",
     waist="Acuity Belt +1",
-    left_ear="Gwati Earring",
-    right_ear="Enchntr. Earring +1",
+    left_ear="Regal Earring",
+    right_ear="Digni. Earring",
     left_ring="Stikini Ring +1",
     right_ring="Metamor. Ring +1",
     back={ name="Intarabus's Cape", augments={'CHR+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','"Fast Cast"+10',}},
@@ -360,8 +375,8 @@ function init_gear_sets()
     feet="Brioso Slippers +2",
     neck="Moonbow Whistle +1",
     waist="Acuity Belt +1",
-    left_ear="Gwati Earring",
-    right_ear="Enchntr. Earring +1",
+    left_ear="Regal Earring",
+    right_ear="Digni. Earring",
     left_ring="Stikini Ring +1",
     right_ring="Metamor. Ring +1",
     back={ name="Intarabus's Cape", augments={'CHR+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','"Fast Cast"+10',}},
@@ -431,8 +446,8 @@ function init_gear_sets()
     feet="Brioso Slippers +2",
     neck="Moonbow Whistle +1",
     waist="Acuity Belt +1",
-    left_ear="Gwati Earring",
-    right_ear="Enchntr. Earring +1",
+    left_ear="Regal Earring",
+    right_ear="Digni. Earring",
     left_ring="Stikini Ring +1",
     right_ring="Metamor. Ring +1",
     back={ name="Intarabus's Cape", augments={'CHR+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','"Fast Cast"+10',}},
@@ -447,7 +462,7 @@ function init_gear_sets()
     sets.idle = {
       main="Naegling",
     sub="Genbu's Shield",
-    range={ name="Linos", augments={'Attack+15','"Dbl.Atk."+3','STR+6 CHR+6',}},
+    range="Marsyas",
     head="Nyame Helm",
     body="Nyame Mail",
     hands="Nyame Gauntlets",
@@ -465,7 +480,7 @@ function init_gear_sets()
     sets.idle.DT = {
       main="Naegling",
     sub="Genbu's Shield",
-    range={ name="Linos", augments={'Attack+15','"Dbl.Atk."+3','STR+6 CHR+6',}},
+    range="Marsyas",
     head="Nyame Helm",
     body="Nyame Mail",
     hands="Nyame Gauntlets",
@@ -483,7 +498,7 @@ function init_gear_sets()
     sets.idle.MEva = {
       main="Naegling",
     sub="Genbu's Shield",
-    range={ name="Linos", augments={'Attack+15','"Dbl.Atk."+3','STR+6 CHR+6',}},
+    range="Marsyas",
     head="Nyame Helm",
     body="Nyame Mail",
     hands="Nyame Gauntlets",
@@ -523,14 +538,15 @@ function init_gear_sets()
     -- EG: sets.engaged.Dagger.Accuracy.Evasion
 
     sets.engaged = {
-    range={ name="Linos", augments={'Attack+15','"Dbl.Atk."+3','STR+6 CHR+6',}},
+	main="Naegling",
+	range={ name="Linos", augments={'Attack+15','"Dbl.Atk."+3','STR+6 CHR+6',}},
     head="Aya. Zucchetto +2",
     body="Ayanmo Corazza +2",
     hands="Aya. Manopolas +1",
     legs="Aya. Cosciales +2",
     feet="Aya. Gambieras +1",
     neck="Bard's Charm +1",
-    waist="Windbuffet Belt +1",
+    waist={ name="Sailfi Belt +1", augments={'Path: A',}},
     left_ear="Brutal Earring",
     right_ear="Telos Earring",
     left_ring="Ilabrat Ring",
@@ -585,7 +601,7 @@ function init_gear_sets()
     legs="Aya. Cosciales +2",
     feet="Aya. Gambieras +1",
     neck="Bard's Charm +1",
-    waist="Windbuffet Belt +1",
+    waist={ name="Sailfi Belt +1", augments={'Path: A',}},
     left_ear="Brutal Earring",
     right_ear="Eabani Earring",
     left_ring="Ilabrat Ring",
