@@ -55,7 +55,21 @@ function init_gear_sets()
     sets.precast.JA['Sange'] = {}
 
     -- Waltz set (chr and vit)
-    sets.precast.Waltz = {}
+    sets.precast.Waltz = {
+	ammo="Yamarang",
+    head={ name="Herculean Helm", augments={'Accuracy+21 Attack+21','"Waltz" potency +11%','MND+2','Accuracy+3',}},
+    body={ name="Herculean Vest", augments={'Accuracy+13 Attack+13','"Waltz" potency +10%','STR+7','Accuracy+3',}},
+    hands={ name="Herculean Gloves", augments={'"Waltz" potency +11%','Accuracy+2','Attack+15',}},
+    legs={ name="Herculean Trousers", augments={'"Waltz" potency +11%','STR+4','Accuracy+3','Attack+7',}},
+    feet={ name="Herculean Boots", augments={'"Waltz" potency +10%','Attack+4',}},
+    neck={ name="Bathy Choker +1", augments={'Path: A',}},
+    waist="Flume Belt +1",
+    left_ear="Lugra Earring",
+    right_ear="Odnowa Earring +1",
+    left_ring="Sirona's Ring",
+    right_ring="Supershear Ring",
+    back={ name="Andartia's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Magic dmg. taken-10%',}},
+	}
         -- Uk'uxkaj Cap, Daihanshi Habaki
         
     -- Don't need any special gear for Healing Waltz.
@@ -131,7 +145,21 @@ function init_gear_sets()
 	})
 
 
-    sets.precast.WS['Aeolian Edge'] = {}
+    sets.precast.WS['Aeolian Edge'] = {
+	ammo="Ghastly Tathlum +1",
+    head={ name="Mochi. Hatsuburi +3", augments={'Enhances "Yonin" and "Innin" effect',}},
+    body="Nyame Mail",
+    hands="Nyame Gauntlets",
+    legs="Nyame Flanchard",
+    feet={ name="Mochi. Kyahan +3", augments={'Enh. Ninj. Mag. Acc/Cast Time Red.',}},
+    neck="Fotia Gorget",
+    waist="Fotia Belt",
+    left_ear="Friomisi Earring",
+    right_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
+    left_ring="Dingir Ring",
+    right_ring="Epaminondas's Ring",
+    back={ name="Andartia's Mantle", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','"Mag.Atk.Bns."+10','Magic dmg. taken-10%',}},
+}
 
     
     --------------------------------------
@@ -196,7 +224,7 @@ function init_gear_sets()
     legs="Mpaca's Hose",
     feet="Mpaca's Boots",
     neck={ name="Ninja Nodowa +1", augments={'Path: A',}},
-    waist="Windbuffet Belt +1",
+    waist={ name="Sailfi Belt +1", augments={'Path: A',}},
     left_ear="Brutal Earring",
     right_ear="Cessance Earring",
     left_ring="Gere Ring",
@@ -211,7 +239,7 @@ function init_gear_sets()
     legs="Mpaca's Hose",
     feet="Mpaca's Boots",
     neck={ name="Ninja Nodowa +1", augments={'Path: A',}},
-    waist="Windbuffet Belt +1",
+    waist={ name="Sailfi Belt +1", augments={'Path: A',}},
     left_ear="Brutal Earring",
     right_ear="Cessance Earring",
     left_ring="Gere Ring",
@@ -223,14 +251,14 @@ function init_gear_sets()
     
     -- Defense sets
     sets.defense.Evasion = {
-	ammo="Date Shuriken",
+	ammo="Yamarang",
     head="Malignance Chapeau",
     body="Malignance Tabard",
-    hands="Mpaca's Gloves",
+    hands="Malignance Gloves",
     legs="Malignance Tights",
     feet="Malignance Boots",
     neck="Bathy Choker +1",
-    waist="Svelt. Gouriz +1",
+    waist="Engraved Belt",
     left_ear="Eabani Earring",
     right_ear="Infused Earring",
     left_ring="Defending Ring",
@@ -276,7 +304,7 @@ function init_gear_sets()
     legs="Mpaca's Hose",
     feet="Mpaca's Boots",
     neck={ name="Ninja Nodowa +1", augments={'Path: A',}},
-    waist="Windbuffet Belt +1",
+    waist={ name="Sailfi Belt +1", augments={'Path: A',}},
     left_ear="Brutal Earring",
     right_ear="Cessance Earring",
     left_ring="Gere Ring",
@@ -285,14 +313,14 @@ function init_gear_sets()
 	}
     sets.engaged.Acc = {}
     sets.engaged.Evasion = {
-	ammo="Date Shuriken",
+	ammo="Yamarang",
     head="Malignance Chapeau",
     body="Malignance Tabard",
-    hands="Mpaca's Gloves",
+    hands="Malignance Gloves",
     legs="Malignance Tights",
     feet="Malignance Boots",
     neck="Bathy Choker +1",
-    waist="Svelt. Gouriz +1",
+    waist="Engraved Belt",
     left_ear="Eabani Earring",
     right_ear="Infused Earring",
     left_ring="Defending Ring",
@@ -326,7 +354,7 @@ function init_gear_sets()
     legs="Mpaca's Hose",
     feet="Mpaca's Boots",
     neck={ name="Ninja Nodowa +1", augments={'Path: A',}},
-    waist="Windbuffet Belt +1",
+    waist={ name="Sailfi Belt +1", augments={'Path: A',}},
     left_ear="Brutal Earring",
     right_ear="Cessance Earring",
     left_ring="Gere Ring",
@@ -335,14 +363,14 @@ function init_gear_sets()
 	}
     sets.engaged.Acc.HighHaste = {}
     sets.engaged.Evasion.HighHaste = {
-	ammo="Date Shuriken",
+	ammo="Yamarang",
     head="Malignance Chapeau",
     body="Malignance Tabard",
-    hands="Mpaca's Gloves",
+    hands="Malignance Gloves",
     legs="Malignance Tights",
     feet="Malignance Boots",
     neck="Bathy Choker +1",
-    waist="Svelt. Gouriz +1",
+    waist="Engraved Belt",
     left_ear="Eabani Earring",
     right_ear="Infused Earring",
     left_ring="Defending Ring",
@@ -376,7 +404,7 @@ function init_gear_sets()
     legs="Mpaca's Hose",
     feet="Mpaca's Boots",
     neck={ name="Ninja Nodowa +1", augments={'Path: A',}},
-    waist="Windbuffet Belt +1",
+    waist={ name="Sailfi Belt +1", augments={'Path: A',}},
     left_ear="Brutal Earring",
     right_ear="Cessance Earring",
     left_ring="Gere Ring",
@@ -385,14 +413,14 @@ function init_gear_sets()
 	}
     sets.engaged.Acc.EmbravaHaste = {}
     sets.engaged.Evasion.EmbravaHaste = {
-	ammo="Date Shuriken",
+	ammo="Yamarang",
     head="Malignance Chapeau",
     body="Malignance Tabard",
-    hands="Mpaca's Gloves",
+    hands="Malignance Gloves",
     legs="Malignance Tights",
     feet="Malignance Boots",
     neck="Bathy Choker +1",
-    waist="Svelt. Gouriz +1",
+    waist="Engraved Belt",
     left_ear="Eabani Earring",
     right_ear="Infused Earring",
     left_ring="Defending Ring",
@@ -426,7 +454,7 @@ function init_gear_sets()
     legs="Mpaca's Hose",
     feet="Mpaca's Boots",
     neck={ name="Ninja Nodowa +1", augments={'Path: A',}},
-    waist="Windbuffet Belt +1",
+    waist={ name="Sailfi Belt +1", augments={'Path: A',}},
     left_ear="Brutal Earring",
     right_ear="Cessance Earring",
     left_ring="Gere Ring",
@@ -435,14 +463,14 @@ function init_gear_sets()
 	}
     sets.engaged.Acc.MaxHaste = {}
     sets.engaged.Evasion.MaxHaste = {
-	ammo="Date Shuriken",
+	ammo="Yamarang",
     head="Malignance Chapeau",
     body="Malignance Tabard",
-    hands="Mpaca's Gloves",
+    hands="Malignance Gloves",
     legs="Malignance Tights",
     feet="Malignance Boots",
     neck="Bathy Choker +1",
-    waist="Svelt. Gouriz +1",
+    waist="Engraved Belt",
     left_ear="Eabani Earring",
     right_ear="Infused Earring",
     left_ring="Defending Ring",
