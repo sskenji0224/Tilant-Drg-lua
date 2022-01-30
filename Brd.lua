@@ -188,14 +188,14 @@ function init_gear_sets()
 
     -- Fast cast sets for spells
     sets.precast.FC = {
-	main={ name="Kali", augments={'Mag. Acc.+15','String instrument skill +10','Wind instrument skill +10',}},
-    sub="Genbu's Shield",
+	main="Carnwenhan",
+    sub="Genmei Shield",
     range="Gjallarhorn",
     head="Fili Calot +1",
     body="Inyanga Jubbah +2",
     hands={ name="Gende. Gages +1", augments={'Phys. dmg. taken -3%','Magic dmg. taken -3%','Song spellcasting time -5%',}},
     legs="Aya. Cosciales +2",
-    feet="Brioso Slippers +2",
+    feet="Brioso Slippers +3",
     neck="Loricate Torque +1",
     waist="Flume Belt +1",
     left_ear="Etiolation Earring",
@@ -208,8 +208,8 @@ function init_gear_sets()
     sets.precast.FC['Enhancing Magic'] = set_combine(sets.precast.FC, {
     })
 
-    sets.precast.FC.Cure = set_combine(sets.precast.FC, {main="Daybreak",
-    sub="Genbu's Shield",
+    sets.precast.FC.Cure = set_combine(sets.precast.FC, {main="Carnwenhan",
+    sub="Genmei Shield",
     ammo="Sapience Orb",
     head={ name="Vanya Hood", augments={'MP+50','"Fast Cast"+10','Haste+2%',}},
     body="Heka's Kalasiris",
@@ -225,13 +225,13 @@ function init_gear_sets()
     back="Solemnity Cape",})
 
     sets.precast.FC.BardSong = {
-      main={ name="Kali", augments={'Mag. Acc.+15','String instrument skill +10','Wind instrument skill +10',}},
-    sub="Genbu's Shield",
+    main="Carnwenhan",
+    sub="Genmei Shield",
     head="Fili Calot +1",
     body="Inyanga Jubbah +2",
     hands={ name="Gende. Gages +1", augments={'Phys. dmg. taken -3%','Magic dmg. taken -3%','Song spellcasting time -5%',}},
     legs="Aya. Cosciales +2",
-    feet="Brioso Slippers +2",
+    feet="Brioso Slippers +3",
     neck="Loricate Torque +1",
     waist="Flume Belt +1",
     left_ear="Etiolation Earring",
@@ -269,36 +269,49 @@ function init_gear_sets()
     sets.precast.WS['Exenterator'] = set_combine(sets.precast.WS, {
     })
 
-    sets.precast.WS['Mordant Rime'] = set_combine(sets.precast.WS, {})
+    sets.precast.WS['Mordant Rime'] = set_combine(sets.precast.WS, {
+	range={ name="Linos", augments={'Attack+15','"Dbl.Atk."+3','STR+6 CHR+6',}},
+    head={ name="Bihu Roundlet +3", augments={'Enhances "Con Anima" effect',}},
+    body={ name="Bihu Jstcorps. +3", augments={'Enhances "Troubadour" effect',}},
+    hands={ name="Bihu Cuffs +3", augments={'Enhances "Con Brio" effect',}},
+    legs={ name="Bihu Cannions +3", augments={'Enhances "Soul Voice" effect',}},
+    feet={ name="Bihu Slippers +3", augments={'Enhances "Nightingale" effect',}},
+    neck={ name="Bard's Charm +1", augments={'Path: A',}},
+    waist={ name="Sailfi Belt +1", augments={'Path: A',}},
+    left_ear="Regal Earring",
+    right_ear="Ishvara Earring",
+    left_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
+    right_ring="Epaminondas's Ring",
+    back={ name="Intarabus's Cape", augments={'STR+20','Accuracy+20 Attack+20','Weapon skill damage +10%',}},})
 
     sets.precast.WS['Rudra\'s Storm'] = set_combine(sets.precast.WS, {
 	range={ name="Linos", augments={'Attack+15','"Dbl.Atk."+3','STR+6 CHR+6',}},
-    head="Nyame Helm",
-    body="Nyame Mail",
-    hands="Nyame Gauntlets",
-    legs="Nyame Flanchard",
-    feet="Nyame Sollerets",
+    head={ name="Bihu Roundlet +3", augments={'Enhances "Con Anima" effect',}},
+    body={ name="Bihu Jstcorps. +3", augments={'Enhances "Troubadour" effect',}},
+    hands={ name="Bihu Cuffs +3", augments={'Enhances "Con Brio" effect',}},
+    legs={ name="Bihu Cannions +3", augments={'Enhances "Soul Voice" effect',}},
+    feet={ name="Bihu Slippers +3", augments={'Enhances "Nightingale" effect',}},
     neck="Fotia Gorget",
     waist="Fotia Belt",
     left_ear="Brutal Earring",
     right_ear="Ishvara Earring",
     left_ring="Ilabrat Ring",
-    right_ring="Moonlight Ring",
+    right_ring="Epaminondas's Ring",
     back={ name="Intarabus's Cape", augments={'STR+20','Accuracy+20 Attack+20','Weapon skill damage +10%',}},})
 
     sets.precast.WS['Savage Blade'] = set_combine(sets.precast.WS, {
 	range={ name="Linos", augments={'Attack+15','"Dbl.Atk."+3','STR+6 CHR+6',}},
-    head="Nyame Helm",
-    body="Nyame Mail",
-    hands="Nyame Gauntlets",
-    legs="Nyame Flanchard",
-    feet="Nyame Sollerets",
+    head={ name="Bihu Roundlet +3", augments={'Enhances "Con Anima" effect',}},
+    body={ name="Bihu Jstcorps. +3", augments={'Enhances "Troubadour" effect',}},
+    hands={ name="Bihu Cuffs +3", augments={'Enhances "Con Brio" effect',}},
+    legs={ name="Bihu Cannions +3", augments={'Enhances "Soul Voice" effect',}},
+    feet={ name="Bihu Slippers +3", augments={'Enhances "Nightingale" effect',}},
     neck="Fotia Gorget",
     waist="Fotia Belt",
     left_ear="Brutal Earring",
     right_ear="Ishvara Earring",
     left_ring="Ilabrat Ring",
-    right_ring="Moonlight Ring",
+    right_ring="Epaminondas's Ring",
     back={ name="Intarabus's Cape", augments={'STR+20','Accuracy+20 Attack+20','Weapon skill damage +10%',}},})
 
 
@@ -315,14 +328,14 @@ function init_gear_sets()
     sets.midcast.Etude = {head="Mousai Turban +1"}
     sets.midcast.HonorMarch = {range="Marsyas", hands="Fili Manchettes +1"}
     sets.midcast.Lullaby = {
-	main={ name="Kali", augments={'Mag. Acc.+15','String instrument skill +10','Wind instrument skill +10',}},
-    sub="Genbu's Shield",
+	main="Carnwenhan",
+    sub="Genmei Shield",
     range="Daurdabla",
     head="Brioso Roundlet +2",
     body="Fili Hongreline +1",
     hands="Brioso Cuffs +2",
     legs="Inyanga Shalwar +2",
-    feet="Brioso Slippers +2",
+    feet="Brioso Slippers +3",
     neck="Moonbow Whistle +1",
     waist="Acuity Belt +1",
     left_ear="Regal Earring",
@@ -346,14 +359,14 @@ function init_gear_sets()
 
     -- For song buffs (duration and AF3 set bonus)
     sets.midcast.SongEnhancing = {
-    main={ name="Kali", augments={'Mag. Acc.+15','String instrument skill +10','Wind instrument skill +10',}},
-    sub="Genbu's Shield",
+    main="Carnwenhan",
+    sub="Genmei Shield",
     range="Gjallarhorn",
     head="Fili Calot +1",
     body="Fili Hongreline +1",
     hands="Fili Manchettes +1",
     legs="Inyanga Shalwar +2",
-    feet="Brioso Slippers +2",
+    feet="Brioso Slippers +3",
     neck="Moonbow Whistle +1",
     waist="Flume Belt +1",
     left_ear="Musical Earring",
@@ -365,14 +378,14 @@ function init_gear_sets()
 
     -- For song defbuffs (duration primary, accuracy secondary)
     sets.midcast.SongEnfeeble = {
-    main={ name="Kali", augments={'Mag. Acc.+15','String instrument skill +10','Wind instrument skill +10',}},
-    sub="Genbu's Shield",
+    main="Carnwenhan",
+    sub="Genmei Shield",
     range="Gjallarhorn",
     head="Brioso Roundlet +2",
-    body="Brioso Just. +1",
+    body="Brioso Just. +2",
     hands="Brioso Cuffs +2",
-    legs="Brioso Cann. +1",
-    feet="Brioso Slippers +2",
+    legs="Brioso Cann. +2",
+    feet="Brioso Slippers +3",
     neck="Moonbow Whistle +1",
     waist="Acuity Belt +1",
     left_ear="Regal Earring",
@@ -392,8 +405,8 @@ function init_gear_sets()
 
     -- Placeholder song; minimize duration to make it easy to overwrite.
     sets.midcast.SongPlaceholder = set_combine(sets.midcast.SongEnhancing, {
-    main={ name="Kali", augments={'Mag. Acc.+15','String instrument skill +10','Wind instrument skill +10',}},
-    sub="Genbu's Shield",
+    main="Carnwenhan",
+    sub="Genmei Shield",
     range="Daurdabla",
     head="Fili Calot +1",
     body="Fili Hongreline +1",
@@ -410,10 +423,38 @@ function init_gear_sets()
     })
 
     -- Other general spells and classes.
-    sets.midcast.Cure = {
+    sets.midcast.Cure = {main="Daybreak",
+    sub="Genmei Shield",
+    ammo="Sapience Orb",
+    head={ name="Vanya Hood", augments={'MP+50','"Fast Cast"+10','Haste+2%',}},
+    body="Heka's Kalasiris",
+    hands="Bokwus Gloves",
+    legs={ name="Vanya Slops", augments={'Healing magic skill +20','"Cure" spellcasting time -7%','Magic dmg. taken -3',}},
+    feet={ name="Vanya Clogs", augments={'"Cure" potency +5%','"Cure" spellcasting time -15%','"Conserve MP"+6',}},
+    neck={ name="Bathy Choker +1", augments={'Path: A',}},
+    waist="Witful Belt",
+    left_ear="Mendi. Earring",
+    right_ear="Enchntr. Earring +1",
+    left_ring="Stikini Ring +1",
+    right_ring="Sirona's Ring",
+    back={ name="Intarabus's Cape", augments={'CHR+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','"Fast Cast"+10',}},
     }
 
-    sets.midcast.Curaga = set_combine(sets.midcast.Cure, {
+    sets.midcast.Curaga = set_combine(sets.midcast.Cure, {main="Daybreak",
+    sub="Genmei Shield",
+    ammo="Sapience Orb",
+    head={ name="Vanya Hood", augments={'MP+50','"Fast Cast"+10','Haste+2%',}},
+    body="Heka's Kalasiris",
+    hands="Bokwus Gloves",
+    legs={ name="Vanya Slops", augments={'Healing magic skill +20','"Cure" spellcasting time -7%','Magic dmg. taken -3',}},
+    feet={ name="Vanya Clogs", augments={'"Cure" potency +5%','"Cure" spellcasting time -15%','"Conserve MP"+6',}},
+    neck={ name="Bathy Choker +1", augments={'Path: A',}},
+    waist="Witful Belt",
+    left_ear="Mendi. Earring",
+    right_ear="Enchntr. Earring +1",
+    left_ring="Stikini Ring +1",
+    right_ring="Sirona's Ring",
+    back={ name="Intarabus's Cape", augments={'CHR+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','"Fast Cast"+10',}},
     })
 
     sets.midcast.StatusRemoval = {
@@ -436,14 +477,14 @@ function init_gear_sets()
     sets.midcast.Shellra = sets.midcast.Shell
 
     sets.midcast['Enfeebling Magic'] = {
-    main={ name="Kali", augments={'Mag. Acc.+15','String instrument skill +10','Wind instrument skill +10',}},
-    sub="Genbu's Shield",
+    main="Carnwenhan",
+    sub="Genmei Shield",
     range="Gjallarhorn",
     head="Brioso Roundlet +2",
-    body="Brioso Just. +1",
+    body="Brioso Just. +2",
     hands="Brioso Cuffs +2",
-    legs="Brioso Cann. +1",
-    feet="Brioso Slippers +2",
+    legs="Brioso Cann. +2",
+    feet="Brioso Slippers +3",
     neck="Moonbow Whistle +1",
     waist="Acuity Belt +1",
     left_ear="Regal Earring",
@@ -460,8 +501,8 @@ function init_gear_sets()
     ------------------------------------------------------------------------------------------------
 
     sets.idle = {
-      main="Naegling",
-    sub="Genbu's Shield",
+    main="Carnwenhan",
+    sub="Genmei Shield",
     range="Marsyas",
     head="Nyame Helm",
     body="Nyame Mail",
@@ -478,8 +519,8 @@ function init_gear_sets()
     }
 
     sets.idle.DT = {
-      main="Naegling",
-    sub="Genbu's Shield",
+    main="Carnwenhan",
+    sub="Genmei Shield",
     range="Marsyas",
     head="Nyame Helm",
     body="Nyame Mail",
@@ -496,8 +537,8 @@ function init_gear_sets()
     }
 
     sets.idle.MEva = {
-      main="Naegling",
-    sub="Genbu's Shield",
+    main="Carnwenhan",
+    sub="Genmei Shield",
     range="Marsyas",
     head="Nyame Helm",
     body="Nyame Mail",
@@ -538,11 +579,11 @@ function init_gear_sets()
     -- EG: sets.engaged.Dagger.Accuracy.Evasion
 
     sets.engaged = {
-	main="Naegling",
+	main="Carnwenhan",
 	range={ name="Linos", augments={'Attack+15','"Dbl.Atk."+3','STR+6 CHR+6',}},
     head="Aya. Zucchetto +2",
     body="Ayanmo Corazza +2",
-    hands="Aya. Manopolas +1",
+    hands="Bunzi's Gloves",
     legs="Aya. Cosciales +2",
     feet="Aya. Gambieras +1",
     neck="Bard's Charm +1",
@@ -565,7 +606,7 @@ function init_gear_sets()
     range={ name="Linos", augments={'Attack+15','"Dbl.Atk."+3','STR+6 CHR+6',}},
     head="Aya. Zucchetto +2",
     body="Ayanmo Corazza +2",
-    hands="Aya. Manopolas +1",
+    hands="Bunzi's Gloves",
     legs="Aya. Cosciales +2",
     feet="Aya. Gambieras +1",
     neck="Bard's Charm +1",
@@ -597,7 +638,7 @@ function init_gear_sets()
       range={ name="Linos", augments={'Attack+15','"Dbl.Atk."+3','STR+6 CHR+6',}},
     head="Aya. Zucchetto +2",
     body="Ayanmo Corazza +2",
-    hands="Aya. Manopolas +1",
+    hands="Bunzi's Gloves",
     legs="Aya. Cosciales +2",
     feet="Aya. Gambieras +1",
     neck="Bard's Charm +1",
