@@ -1130,7 +1130,7 @@ windower.register_event('zone change',
 
 -- Select default macro book on initial load or subjob change.
 function select_default_macro_book()
-    set_macro_page(2, 18)
+    set_macro_page(2, 14)
 end
 
 function set_lockstyle()
