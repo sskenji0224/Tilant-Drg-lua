@@ -158,7 +158,7 @@ function init_gear_sets()
     right_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
     left_ring="Dingir Ring",
     right_ring="Epaminondas's Ring",
-    back={ name="Andartia's Mantle", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','"Mag.Atk.Bns."+10','Magic dmg. taken-10%',}},
+    back={ name="Andartia's Mantle", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','Weapon skill damage +10%',}},
 }
 
     
@@ -207,7 +207,21 @@ function init_gear_sets()
 
     sets.midcast.RA = {}
     -- Hachiya Hakama/Thurandaut Tights +1
-
+	
+	sets.midcast.Provoke = {
+	ammo="Date Shuriken",
+    head="Versa Celata",
+    body="Emet Harness +1",
+    hands="Kurys Gloves",
+    legs="Zoar Subligar +1",
+    feet={ name="Mochi. Kyahan +3", augments={'Enh. Ninj. Mag. Acc/Cast Time Red.',}},
+    neck="Moonbeam Necklace",
+    waist="Kasiri Belt",
+    left_ear="Eabani Earring",
+    right_ear="Infused Earring",
+    left_ring="Supershear Ring",
+    right_ring="Eihwaz Ring",
+    back={ name="Andartia's Mantle", augments={'Enmity+10',}},}
     --------------------------------------
     -- Idle/resting/defense/etc sets
     --------------------------------------
