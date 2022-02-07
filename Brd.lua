@@ -266,8 +266,20 @@ function init_gear_sets()
     -- Specific weaponskill sets.  Uses the base set if an appropriate WSMod version isn't found.
     sets.precast.WS['Evisceration'] = set_combine(sets.precast.WS, {})
 
-    sets.precast.WS['Exenterator'] = set_combine(sets.precast.WS, {
-    })
+    sets.precast.WS['Aeolian Edge'] = set_combine(sets.precast.WS, {
+	range={ name="Linos", augments={'"Mag.Atk.Bns."+15','Weapon skill damage +2%','INT+8',}},
+    head="Nyame Helm",
+    body={ name="Bihu Jstcorps. +3", augments={'Enhances "Troubadour" effect',}},
+    hands={ name="Chironic Gloves", augments={'"Mag.Atk.Bns."+24','Weapon skill damage +1%','Mag. Acc.+20 "Mag.Atk.Bns."+20',}},
+    legs="Gyve Trousers",
+    feet={ name="Chironic Slippers", augments={'Weapon skill damage +2%','Accuracy+23','Damage taken-1%','Accuracy+13 Attack+13','Mag. Acc.+14 "Mag.Atk.Bns."+14',}},
+    neck="Baetyl Pendant",
+    waist="Eschan Stone",
+    left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
+    right_ear="Friomisi Earring",
+    left_ring="Shiva Ring +1",
+    right_ring="Epaminondas's Ring",
+    back={ name="Intarabus's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','Weapon skill damage +10%',}},})
 
     sets.precast.WS['Mordant Rime'] = set_combine(sets.precast.WS, {
 	range={ name="Linos", augments={'Attack+15','"Dbl.Atk."+3','STR+6 CHR+6',}},
@@ -300,17 +312,17 @@ function init_gear_sets()
     back={ name="Intarabus's Cape", augments={'STR+20','Accuracy+20 Attack+20','Weapon skill damage +10%',}},})
 
     sets.precast.WS['Savage Blade'] = set_combine(sets.precast.WS, {
-	range={ name="Linos", augments={'Attack+15','"Dbl.Atk."+3','STR+6 CHR+6',}},
+	range={ name="Linos", augments={'Attack+15','Weapon skill damage +2%','STR+8',}},
     head={ name="Bihu Roundlet +3", augments={'Enhances "Con Anima" effect',}},
     body={ name="Bihu Jstcorps. +3", augments={'Enhances "Troubadour" effect',}},
     hands={ name="Bihu Cuffs +3", augments={'Enhances "Con Brio" effect',}},
     legs={ name="Bihu Cannions +3", augments={'Enhances "Soul Voice" effect',}},
     feet={ name="Bihu Slippers +3", augments={'Enhances "Nightingale" effect',}},
-    neck="Fotia Gorget",
-    waist="Fotia Belt",
-    left_ear="Brutal Earring",
+    neck={ name="Bard's Charm +1", augments={'Path: A',}},
+    waist={ name="Sailfi Belt +1", augments={'Path: A',}},
+    left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
     right_ear="Ishvara Earring",
-    left_ring="Ilabrat Ring",
+    left_ring="Ifrit Ring +1",
     right_ring="Epaminondas's Ring",
     back={ name="Intarabus's Cape", augments={'STR+20','Accuracy+20 Attack+20','Weapon skill damage +10%',}},})
 
