@@ -268,7 +268,7 @@ function init_gear_sets()
 
     sets.precast.WS['Aeolian Edge'] = set_combine(sets.precast.WS, {
 	range={ name="Linos", augments={'"Mag.Atk.Bns."+15','Weapon skill damage +2%','INT+8',}},
-    head="Nyame Helm",
+    head="Bunzi's Hat",
     body={ name="Bihu Jstcorps. +3", augments={'Enhances "Troubadour" effect',}},
     hands={ name="Chironic Gloves", augments={'"Mag.Atk.Bns."+24','Weapon skill damage +1%','Mag. Acc.+20 "Mag.Atk.Bns."+20',}},
     legs="Gyve Trousers",
