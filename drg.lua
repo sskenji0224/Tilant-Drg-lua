@@ -91,7 +91,7 @@ function init_gear_sets()
     sets.precast.JA['Ancient Circle'] = {legs="Vishap Brais +3"}
 
     sets.precast.JA['Spirit Link'] = {
-        head="Vishap Armet +2",
+        head="Vishap Armet +1",
         hands="Pel. Vambraces +1",
         feet="Ptero. Greaves +2",
         --ear1="Pratik Earring",
@@ -108,17 +108,17 @@ function init_gear_sets()
 
     sets.precast.JA['Jump'] = {
         ammo="Ginsen",
-        head="Flam. Zucchetto +2",
-        body="Vishap Mail +2",
-        hands="Vis. Fng. Gaunt. +2",
-        legs="Ptero. Brais +2",
+        head="Flam. Zucchetto +1",
+        body="Vishap Mail +1",
+        hands="Vishap F. G. +1",
+        legs="Vishap Brais +3",
         feet="Ostro Greaves",
         neck="Anu Torque",
         ear1="Sherida Earring",
         ear2="Telos Earring",
         ring1="Petrov Ring",
         ring2="Niqmaddu Ring",
-        back=gear.BrigSTP,
+        back={ name="Brigantia's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10',}},
         waist="Ioskeha Belt",
         }
 
@@ -155,7 +155,7 @@ function init_gear_sets()
     hands="Sulev. Gauntlets +1",
     legs="Vishap Brais +3",
     feet={ name="Lustra. Leggings +1", augments={'Attack+20','STR+8','"Dbl.Atk."+3',}},
-    neck="Fotia Gorget",
+    neck={ name="Dgn. Collar +1", augments={'Path: A',}},
     waist="Fotia Belt",
     left_ear="Sherida Earring",
     right_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
@@ -179,7 +179,7 @@ function init_gear_sets()
     hands="Sulev. Gauntlets +1",
     legs="Vishap Brais +3",
     feet={ name="Lustra. Leggings +1", augments={'Attack+20','STR+8','"Dbl.Atk."+3',}},
-    neck="Fotia Gorget",
+    neck={ name="Dgn. Collar +1", augments={'Path: A',}},
     waist="Fotia Belt",
     left_ear="Sherida Earring",
     right_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
@@ -207,7 +207,7 @@ function init_gear_sets()
     hands="Sulev. Gauntlets +1",
     legs="Vishap Brais +3",
     feet={ name="Lustra. Leggings +1", augments={'Attack+20','STR+8','"Dbl.Atk."+3',}},
-    neck="Fotia Gorget",
+    neck={ name="Dgn. Collar +1", augments={'Path: A',}},
     waist="Fotia Belt",
     left_ear="Sherida Earring",
     right_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
@@ -227,7 +227,7 @@ function init_gear_sets()
     hands="Sulev. Gauntlets +1",
     legs="Vishap Brais +3",
     feet={ name="Lustra. Leggings +1", augments={'Attack+20','STR+8','"Dbl.Atk."+3',}},
-    neck="Fotia Gorget",
+    neck={ name="Dgn. Collar +1", augments={'Path: A',}},
     waist="Fotia Belt",
     left_ear="Sherida Earring",
     right_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
@@ -243,26 +243,20 @@ function init_gear_sets()
     head={ name="Lustratio Cap +1", augments={'Attack+20','STR+8','"Dbl.Atk."+3',}},
     body={ name="Lustr. Harness +1", augments={'Attack+20','STR+8','"Dbl.Atk."+3',}},
     hands="Sulev. Gauntlets +1",
-    legs="Vishap Brais +3",
+    legs="Sulev. Cuisses +2",
     feet={ name="Lustra. Leggings +1", augments={'Attack+20','STR+8','"Dbl.Atk."+3',}},
-    neck="Fotia Gorget",
+    neck={ name="Dgn. Collar +1", augments={'Path: A',}},
     waist="Fotia Belt",
     left_ear="Sherida Earring",
     right_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
     left_ring="Niqmaddu Ring",
     right_ring="Petrov Ring",
-    back={ name="Brigantia's Mantle", augments={'DEX+10','Accuracy+20 Attack+20','Weapon skill damage +10%',}},
+    back={ name="Brigantia's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10',}},
         }
 
-    sets.precast.WS['Stardiver'].Acc = set_combine(sets.precast.WS['Stardiver'], {
-        --head="Ptero. Armet +1",
-        feet="Ptero. Greaves +2",
-        })
+    sets.precast.WS['Stardiver'].Acc = set_combine(sets.precast.WS['Stardiver'], {})
 
-    sets.precast.WS['Stardiver'].Uncapped = set_combine(sets.precast.WS['Stardiver'], {
-        --head="Ptero. Armet +1",
-        legs="Sulev. Cuisses +2",
-        })
+    sets.precast.WS['Stardiver'].Uncapped = set_combine(sets.precast.WS['Stardiver'], {})
 	
 	--CRITICAL HIT WS
 	
@@ -273,7 +267,7 @@ function init_gear_sets()
     hands="Sulev. Gauntlets +1",
     legs="Vishap Brais +3",
     feet={ name="Lustra. Leggings +1", augments={'Attack+20','STR+8','"Dbl.Atk."+3',}},
-    neck="Fotia Gorget",
+    neck={ name="Dgn. Collar +1", augments={'Path: A',}},
     waist="Fotia Belt",
     left_ear="Sherida Earring",
     right_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
@@ -314,7 +308,7 @@ function init_gear_sets()
     hands="Sulev. Gauntlets +1",
     legs="Vishap Brais +3",
     feet={ name="Lustra. Leggings +1", augments={'Attack+20','STR+8','"Dbl.Atk."+3',}},
-    neck="Fotia Gorget",
+    neck={ name="Dgn. Collar +1", augments={'Path: A',}},
     waist="Fotia Belt",
     left_ear="Sherida Earring",
     right_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
@@ -322,7 +316,7 @@ function init_gear_sets()
     right_ring="Petrov Ring",
     back={ name="Brigantia's Mantle", augments={'DEX+10','Accuracy+20 Attack+20','Weapon skill damage +10%',}},})
 
-    sets.WSDayBonus = {head="Gavialis Helm"}
+    sets.WSDayBonus = {}
 
     ------------------------------------------------------------------------------------------------
     ---------------------------------------- Midcast Sets ------------------------------------------
@@ -343,10 +337,10 @@ function init_gear_sets()
     hands="Flam. Manopolas +2",
     legs="Sulev. Cuisses +2",
     feet="Flam. Gambieras +2",
-    neck="Anu Torque",
+    neck={ name="Dgn. Collar +1", augments={'Path: A',}},
     waist="Ioskeha Belt",
     left_ear="Sherida Earring",
-    right_ear="Brutal Earring",
+    right_ear="Telos Earring",
     left_ring="Niqmaddu Ring",
     right_ring="Moonlight Ring",
     back={ name="Brigantia's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10',}},}
@@ -379,10 +373,10 @@ function init_gear_sets()
     hands="Flam. Manopolas +2",
     legs="Sulev. Cuisses +2",
     feet="Flam. Gambieras +2",
-    neck="Anu Torque",
+    neck={ name="Dgn. Collar +1", augments={'Path: A',}},
     waist="Ioskeha Belt",
     left_ear="Sherida Earring",
-    right_ear="Brutal Earring",
+    right_ear="Telos Earring",
     left_ring="Niqmaddu Ring",
     right_ring="Moonlight Ring",
     back={ name="Brigantia's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10',}},}
