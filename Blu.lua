@@ -78,7 +78,7 @@ function get_sets()
 
     --+11 DW for capping with DW3 and capped magic haste--    
     sets.TP.CapHaste = {
-	ammo="Ginsen",
+	ammo="Coiste Bodhar",
     head={ name="Adhemar Bonnet +1", augments={'STR+12','DEX+12','Attack+20',}},
     body={ name="Adhemar Jacket +1", augments={'STR+12','DEX+12','Attack+20',}},
     hands={ name="Adhemar Wrist. +1", augments={'STR+12','DEX+12','Attack+20',}},
@@ -94,7 +94,7 @@ function get_sets()
 	}
 
     sets.TP.AccuracyLite = {
-	ammo="Ginsen",
+	ammo="Coiste Bodhar",
     head={ name="Adhemar Bonnet +1", augments={'STR+12','DEX+12','Attack+20',}},
     body={ name="Adhemar Jacket +1", augments={'STR+12','DEX+12','Attack+20',}},
     hands={ name="Adhemar Wrist. +1", augments={'STR+12','DEX+12','Attack+20',}},
@@ -110,7 +110,7 @@ function get_sets()
 	}
 
     sets.TP.AccuracyMid = {
-	ammo="Ginsen",
+	ammo="Coiste Bodhar",
     head={ name="Adhemar Bonnet +1", augments={'STR+12','DEX+12','Attack+20',}},
     body={ name="Adhemar Jacket +1", augments={'STR+12','DEX+12','Attack+20',}},
     hands={ name="Adhemar Wrist. +1", augments={'STR+12','DEX+12','Attack+20',}},
@@ -126,7 +126,7 @@ function get_sets()
 	}
 
     sets.TP.AccuracyFull = {
-	ammo="Ginsen",
+	ammo="Coiste Bodhar",
     head={ name="Adhemar Bonnet +1", augments={'STR+12','DEX+12','Attack+20',}},
     body={ name="Adhemar Jacket +1", augments={'STR+12','DEX+12','Attack+20',}},
     hands={ name="Adhemar Wrist. +1", augments={'STR+12','DEX+12','Attack+20',}},
@@ -201,7 +201,20 @@ function get_sets()
     --Weaponskill Sets--
     sets.WS = {}
 
-    sets.Requiescat = {}
+    sets.Requiescat = {
+	ammo="Coiste Bodhar",
+    head={ name="Herculean Helm", augments={'Attack+29','Weapon skill damage +4%','DEX+8','Accuracy+13',}},
+    body="Gleti's Cuirass",
+    hands="Gleti's Gauntlets",
+    legs="Gleti's Breeches",
+    feet="Gleti's Boots",
+    neck="Rep. Plat. Medal",
+    waist={ name="Sailfi Belt +1", augments={'Path: A',}},
+    left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
+    right_ear="Brutal Earring",
+    left_ring="Ifrit Ring +1",
+    right_ring="Epaminondas's Ring",
+	}
 
     sets.Requiescat.index = { 'AttackUncap', 'AttackCap', 'Accuracy' }
     Requiescat_ind = 1
@@ -212,29 +225,128 @@ function get_sets()
 	
     sets.Requiescat.Accuracy = {}
 
-    sets.CDC = {}
+    sets.CDC = {
+	ammo="Coiste Bodhar",
+    head={ name="Adhemar Bonnet +1", augments={'STR+12','DEX+12','Attack+20',}},
+    body="Gleti's Cuirass",
+    hands={ name="Adhemar Wrist. +1", augments={'STR+12','DEX+12','Attack+20',}},
+    legs="Gleti's Breeches",
+    feet="Gleti's Boots",
+    neck="Fotia Gorget",
+    waist="Fotia Belt",
+    left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
+    right_ear="Mache Earring +1",
+    left_ring="Epona's Ring",
+    right_ring="Begrudging Ring",
+	}
 
     sets.CDC.index = { 'AttackUncap', 'AttackCap', 'Accuracy' }
     CDC_ind = 1
 
-    sets.CDC.AttackUncap = {}
+    sets.CDC.AttackUncap = {ammo="Coiste Bodhar",
+    head={ name="Adhemar Bonnet +1", augments={'STR+12','DEX+12','Attack+20',}},
+    body="Gleti's Cuirass",
+    hands={ name="Adhemar Wrist. +1", augments={'STR+12','DEX+12','Attack+20',}},
+    legs="Gleti's Breeches",
+    feet="Gleti's Boots",
+    neck="Fotia Gorget",
+    waist="Fotia Belt",
+    left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
+    right_ear="Mache Earring +1",
+    left_ring="Epona's Ring",
+    right_ring="Begrudging Ring",}
 
-    sets.CDC.AttackCap = set_combine(sets.CDC.AttackUncap, {})
+    sets.CDC.AttackCap = set_combine(sets.CDC.AttackUncap, {ammo="Coiste Bodhar",
+    head={ name="Adhemar Bonnet +1", augments={'STR+12','DEX+12','Attack+20',}},
+    body="Gleti's Cuirass",
+    hands={ name="Adhemar Wrist. +1", augments={'STR+12','DEX+12','Attack+20',}},
+    legs="Gleti's Breeches",
+    feet="Gleti's Boots",
+    neck="Fotia Gorget",
+    waist="Fotia Belt",
+    left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
+    right_ear="Mache Earring +1",
+    left_ring="Epona's Ring",
+    right_ring="Begrudging Ring",})
     
-    sets.CDC.Accuracy = {}
+    sets.CDC.Accuracy = {ammo="Coiste Bodhar",
+    head={ name="Adhemar Bonnet +1", augments={'STR+12','DEX+12','Attack+20',}},
+    body="Gleti's Cuirass",
+    hands={ name="Adhemar Wrist. +1", augments={'STR+12','DEX+12','Attack+20',}},
+    legs="Gleti's Breeches",
+    feet="Gleti's Boots",
+    neck="Fotia Gorget",
+    waist="Fotia Belt",
+    left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
+    right_ear="Mache Earring +1",
+    left_ring="Epona's Ring",
+    right_ring="Begrudging Ring",}
 
-    sets.Expiacion = {}
+    sets.Expiacion = {
+	ammo="Coiste Bodhar",
+    head={ name="Herculean Helm", augments={'Attack+29','Weapon skill damage +4%','DEX+8','Accuracy+13',}},
+    body="Gleti's Cuirass",
+    hands="Gleti's Gauntlets",
+    legs="Gleti's Breeches",
+    feet="Gleti's Boots",
+    neck="Rep. Plat. Medal",
+    waist={ name="Sailfi Belt +1", augments={'Path: A',}},
+    left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
+    right_ear="Brutal Earring",
+    left_ring="Ifrit Ring +1",
+    right_ring="Epaminondas's Ring",
+	}
 
     sets.Expiacion.index = { 'AttackUncap', 'AttackCap', 'Accuracy' }
     Expiacion_ind = 1
 
-    sets.Expiacion.AttackUncap = {}
+    sets.Expiacion.AttackUncap = {
+	ammo="Coiste Bodhar",
+    head={ name="Herculean Helm", augments={'Attack+29','Weapon skill damage +4%','DEX+8','Accuracy+13',}},
+    body="Gleti's Cuirass",
+    hands="Gleti's Gauntlets",
+    legs="Gleti's Breeches",
+    feet="Gleti's Boots",
+    neck="Rep. Plat. Medal",
+    waist={ name="Sailfi Belt +1", augments={'Path: A',}},
+    left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
+    right_ear="Brutal Earring",
+    left_ring="Ifrit Ring +1",
+    right_ring="Epaminondas's Ring",
+	}
 
-	sets.Expiacion.AttackCap = set_combine(sets.Expiacion.AttackUncap, {})
+	sets.Expiacion.AttackCap = set_combine(sets.Expiacion.AttackUncap, {
+	ammo="Coiste Bodhar",
+    head={ name="Herculean Helm", augments={'Attack+29','Weapon skill damage +4%','DEX+8','Accuracy+13',}},
+    body="Gleti's Cuirass",
+    hands="Gleti's Gauntlets",
+    legs="Gleti's Breeches",
+    feet="Gleti's Boots",
+    neck="Rep. Plat. Medal",
+    waist={ name="Sailfi Belt +1", augments={'Path: A',}},
+    left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
+    right_ear="Brutal Earring",
+    left_ring="Ifrit Ring +1",
+    right_ring="Epaminondas's Ring",
+	})
 	
-    sets.Expiacion.Accuracy = {}
+    sets.Expiacion.Accuracy = {
+	ammo="Coiste Bodhar",
+    head={ name="Herculean Helm", augments={'Attack+29','Weapon skill damage +4%','DEX+8','Accuracy+13',}},
+    body="Gleti's Cuirass",
+    hands="Gleti's Gauntlets",
+    legs="Gleti's Breeches",
+    feet="Gleti's Boots",
+    neck="Rep. Plat. Medal",
+    waist={ name="Sailfi Belt +1", augments={'Path: A',}},
+    left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
+    right_ear="Brutal Earring",
+    left_ring="Ifrit Ring +1",
+    right_ring="Epaminondas's Ring",
+	}
 
     sets.SanguineBlade = {}
+	
 
     -----------
     --Clubs-- These indexs probably will never need to be toggled,
