@@ -1,6 +1,3 @@
---"Advanced" BLU.lua--
----Make sure you rename it after your character name, for example  xXSephirothFanBoiXx.lua
-
 --Basically rips out some of my personalization, utility sets, and Tizona AM3 DT sets. So there is little difference between this and my personal one.
 
 ----------------------
@@ -36,9 +33,7 @@ function get_sets()
     sets.Idle.Standard = {}
 
     sets.Idle.DTRefresh = {
-	main="Bolelabunga",
-    sub="Bunzi's Rod",
-    ammo="Staunch Tathlum +1",
+	ammo="Staunch Tathlum +1",
     head={ name="Rawhide Mask", augments={'HP+50','Accuracy+15','Evasion+20',}},
     body={ name="Amalric Doublet +1", augments={'MP+80','Mag. Acc.+20','"Mag.Atk.Bns."+20',}},
     hands="Nyame Gauntlets",
@@ -173,7 +168,21 @@ function get_sets()
     sets.DT.index = { 'DT', 'Hybrid', 'MDT', 'MEVA', 'DTAcc' }
     DT_ind = 1 
 
-    sets.DT.DT = {}
+    sets.DT.DT = {
+	ammo="Amar Cluster",
+    head="Malignance Chapeau",
+    body="Malignance Tabard",
+    hands="Malignance Gloves",
+    legs="Malignance Tights",
+    feet="Malignance Boots",
+    neck={ name="Bathy Choker +1", augments={'Path: A',}},
+    waist="Svelt. Gouriz +1",
+    left_ear="Infused Earring",
+    right_ear="Eabani Earring",
+    left_ring="Gelatinous Ring +1",
+    right_ring="Defending Ring",
+    back="Solemnity Cape",
+	}
 
     sets.DT.Hybrid = {}
 
@@ -410,7 +419,7 @@ function get_sets()
     legs={ name="Amalric Slops +1", augments={'MP+80','"Mag.Atk.Bns."+25','Enmity-6',}},
     feet={ name="Amalric Nails +1", augments={'Mag. Acc.+20','"Mag.Atk.Bns."+20','"Conserve MP"+7',}},
     neck="Baetyl Pendant",
-    waist="Eschan Stone",
+    waist="Orpheus's Sash",
     left_ear="Friomisi Earring",
     right_ear="Regal Earring",
     left_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
@@ -425,7 +434,7 @@ function get_sets()
     legs={ name="Amalric Slops +1", augments={'MP+80','"Mag.Atk.Bns."+25','Enmity-6',}},
     feet={ name="Amalric Nails +1", augments={'Mag. Acc.+20','"Mag.Atk.Bns."+20','"Conserve MP"+7',}},
     neck="Baetyl Pendant",
-    waist="Eschan Stone",
+    waist="Orpheus's Sash",
     left_ear="Friomisi Earring",
     right_ear="Regal Earring",
     left_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
