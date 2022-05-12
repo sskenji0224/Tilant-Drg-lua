@@ -189,7 +189,7 @@ function init_gear_sets()
     -- Fast cast sets for spells
     sets.precast.FC = {
 	main="Carnwenhan",
-    sub="Genmei Shield",
+    sub="Ammurapi Shield",
     range="Gjallarhorn",
     head="Fili Calot +1",
     body="Inyanga Jubbah +2",
@@ -209,7 +209,7 @@ function init_gear_sets()
     })
 
     sets.precast.FC.Cure = set_combine(sets.precast.FC, {main="Carnwenhan",
-    sub="Genmei Shield",
+    sub="Ammurapi Shield",
     ammo="Sapience Orb",
     head={ name="Vanya Hood", augments={'MP+50','"Fast Cast"+10','Haste+2%',}},
     body="Heka's Kalasiris",
@@ -226,7 +226,7 @@ function init_gear_sets()
 
     sets.precast.FC.BardSong = {
     main="Carnwenhan",
-    sub="Genmei Shield",
+    sub="Ammurapi Shield",
     head="Fili Calot +1",
     body="Inyanga Jubbah +2",
     hands={ name="Gende. Gages +1", augments={'Phys. dmg. taken -3%','Magic dmg. taken -3%','Song spellcasting time -5%',}},
@@ -268,13 +268,13 @@ function init_gear_sets()
 
     sets.precast.WS['Aeolian Edge'] = set_combine(sets.precast.WS, {
 	range={ name="Linos", augments={'"Mag.Atk.Bns."+15','Weapon skill damage +2%','INT+8',}},
-    head="Bunzi's Hat",
+    head="C. Palug Crown",
     body={ name="Bihu Jstcorps. +3", augments={'Enhances "Troubadour" effect',}},
     hands={ name="Chironic Gloves", augments={'"Mag.Atk.Bns."+24','Weapon skill damage +1%','Mag. Acc.+20 "Mag.Atk.Bns."+20',}},
     legs="Gyve Trousers",
     feet={ name="Chironic Slippers", augments={'Weapon skill damage +2%','Accuracy+23','Damage taken-1%','Accuracy+13 Attack+13','Mag. Acc.+14 "Mag.Atk.Bns."+14',}},
     neck="Baetyl Pendant",
-    waist="Eschan Stone",
+    waist="Orpheus's Sash",
     left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
     right_ear="Friomisi Earring",
     left_ring="Shiva Ring +1",
@@ -341,19 +341,19 @@ function init_gear_sets()
     sets.midcast.HonorMarch = {range="Marsyas", hands="Fili Manchettes +1"}
     sets.midcast.Lullaby = {
 	main="Carnwenhan",
-    sub="Genmei Shield",
+    sub="Ammurapi Shield",
     range="Daurdabla",
-    head="Brioso Roundlet +2",
-    body="Fili Hongreline +1",
-    hands="Brioso Cuffs +2",
-    legs="Inyanga Shalwar +2",
+    head="Brioso Roundlet +3",
+    body="Brioso Justau. +2",
+    hands="Brioso Cuffs +3",
+    legs="Brioso Cannions +2",
     feet="Brioso Slippers +3",
-    neck="Moonbow Whistle +1",
-    waist="Acuity Belt +1",
+    neck="Mnbw. Whistle +1",
+    waist={ name="Acuity Belt +1", augments={'Path: A',}},
     left_ear="Regal Earring",
     right_ear="Digni. Earring",
     left_ring="Stikini Ring +1",
-    right_ring="Metamor. Ring +1",
+    right_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
     back={ name="Intarabus's Cape", augments={'CHR+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','"Fast Cast"+10',}},
 	}
     sets.midcast.Madrigal = {head="Fili Calot +1"}
@@ -361,7 +361,7 @@ function init_gear_sets()
     sets.midcast.March = {hands="Fili Manchettes +1"}
     sets.midcast.Minne = {legs="Mousai Seraweels +1"}
     sets.midcast.Minuet = {body="Fili Hongreline +1"}
-    sets.midcast.Paeon = {head="Brioso Roundlet +2"}
+    sets.midcast.Paeon = {head="Brioso Roundlet +3"}
     sets.midcast.Threnody = {body="Mou. Manteel +1"}
     sets.midcast['Adventurer\'s Dirge'] = {range="Marsyas", hands="Bihu Cuffs +3"}
     sets.midcast['Foe Sirvente'] = {head="Bihu Roundlet +3"}
@@ -372,7 +372,7 @@ function init_gear_sets()
     -- For song buffs (duration and AF3 set bonus)
     sets.midcast.SongEnhancing = {
     main="Carnwenhan",
-    sub="Genmei Shield",
+    sub="Ammurapi Shield",
     range="Gjallarhorn",
     head="Fili Calot +1",
     body="Fili Hongreline +1",
@@ -391,11 +391,11 @@ function init_gear_sets()
     -- For song defbuffs (duration primary, accuracy secondary)
     sets.midcast.SongEnfeeble = {
     main="Carnwenhan",
-    sub="Genmei Shield",
+    sub="Ammurapi Shield",
     range="Gjallarhorn",
-    head="Brioso Roundlet +2",
+    head="Brioso Roundlet +3",
     body="Brioso Just. +2",
-    hands="Brioso Cuffs +2",
+    hands="Brioso Cuffs +3",
     legs="Brioso Cann. +2",
     feet="Brioso Slippers +3",
     neck="Moonbow Whistle +1",
@@ -412,13 +412,13 @@ function init_gear_sets()
 
     -- For Horde Lullaby maxiumum AOE range.
     sets.midcast.SongStringSkill = {
-      hands="Brioso Cuffs +2",
+      hands="Brioso Cuffs +3",
       ring1="Stikini Ring +1",}
 
     -- Placeholder song; minimize duration to make it easy to overwrite.
     sets.midcast.SongPlaceholder = set_combine(sets.midcast.SongEnhancing, {
     main="Carnwenhan",
-    sub="Genmei Shield",
+    sub="Ammurapi Shield",
     range="Daurdabla",
     head="Fili Calot +1",
     body="Fili Hongreline +1",
@@ -436,7 +436,7 @@ function init_gear_sets()
 
     -- Other general spells and classes.
     sets.midcast.Cure = {main="Daybreak",
-    sub="Genmei Shield",
+    sub="Ammurapi Shield",
     ammo="Sapience Orb",
     head={ name="Vanya Hood", augments={'MP+50','"Fast Cast"+10','Haste+2%',}},
     body="Heka's Kalasiris",
@@ -453,7 +453,7 @@ function init_gear_sets()
     }
 
     sets.midcast.Curaga = set_combine(sets.midcast.Cure, {main="Daybreak",
-    sub="Genmei Shield",
+    sub="Ammurapi Shield",
     ammo="Sapience Orb",
     head={ name="Vanya Hood", augments={'MP+50','"Fast Cast"+10','Haste+2%',}},
     body="Heka's Kalasiris",
@@ -473,7 +473,12 @@ function init_gear_sets()
     }
 
     sets.midcast.Cursna = set_combine(sets.midcast.StatusRemoval, {
-    })
+	neck="Debilis Medallion",
+    waist="Olympus Sash",
+    left_ring="Haoma's Ring",
+    right_ring="Haoma's Ring",
+    back="Oretan. Cape +1",
+	})
 
     sets.midcast['Enhancing Magic'] = {
     }
@@ -490,11 +495,11 @@ function init_gear_sets()
 
     sets.midcast['Enfeebling Magic'] = {
     main="Carnwenhan",
-    sub="Genmei Shield",
+    sub="Ammurapi Shield",
     range="Gjallarhorn",
-    head="Brioso Roundlet +2",
+    head="Brioso Roundlet +3",
     body="Brioso Just. +2",
-    hands="Brioso Cuffs +2",
+    hands="Brioso Cuffs +3",
     legs="Brioso Cann. +2",
     feet="Brioso Slippers +3",
     neck="Moonbow Whistle +1",
