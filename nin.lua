@@ -122,8 +122,21 @@ function init_gear_sets()
     sets.precast.WS.Acc = set_combine(sets.precast.WS, {})
 
     -- Specific weaponskill sets.  Uses the base set if an appropriate WSMod version isn't found.
-    sets.precast.WS['Blade: Jin'] = set_combine(sets.precast.WS,
-        {})
+    sets.precast.WS['Blade: Chi'] = set_combine(sets.precast.WS, {
+	ammo="Seeth. Bomblet +1",
+    head={ name="Mochi. Hatsuburi +3", augments={'Enhances "Yonin" and "Innin" effect',}},
+    body="Nyame Mail",
+    hands="Nyame Gauntlets",
+    legs={ name="Mochi. Hakama +3", augments={'Enhances "Mijin Gakure" effect',}},
+    feet="Nyame Sollerets",
+    neck="Fotia Gorget",
+    waist="Orpheus's Sash",
+    left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
+    right_ear="Lugra Earring +1",
+    left_ring="Gere Ring",
+    right_ring="Epaminondas's Ring",
+    back={ name="Andartia's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','Weapon skill damage +10%',}},
+	})
 
     sets.precast.WS['Blade: Hi'] = set_combine(sets.precast.WS,
         {})
@@ -153,7 +166,7 @@ function init_gear_sets()
     legs="Nyame Flanchard",
     feet={ name="Mochi. Kyahan +3", augments={'Enh. Ninj. Mag. Acc/Cast Time Red.',}},
     neck="Fotia Gorget",
-    waist="Fotia Belt",
+    waist="Orpheus's Sash",
     left_ear="Friomisi Earring",
     right_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
     left_ring="Dingir Ring",
@@ -191,7 +204,7 @@ function init_gear_sets()
     legs="Nyame Flanchard",
     feet={ name="Mochi. Kyahan +3", augments={'Enh. Ninj. Mag. Acc/Cast Time Red.',}},
     neck="Baetyl Pendant",
-    waist="Eschan Stone",
+    waist="Orpheus's Sash",
     left_ear="Friomisi Earring",
     right_ear="Crematio Earring",
     left_ring="Mujin Band",
