@@ -125,17 +125,17 @@ function init_gear_sets()
     sets.precast.WS['Blade: Chi'] = set_combine(sets.precast.WS, {
 	ammo="Seeth. Bomblet +1",
     head={ name="Mochi. Hatsuburi +3", augments={'Enhances "Yonin" and "Innin" effect',}},
-    body="Nyame Mail",
-    hands="Nyame Gauntlets",
-    legs={ name="Mochi. Hakama +3", augments={'Enhances "Mijin Gakure" effect',}},
-    feet="Nyame Sollerets",
+    body={ name="Nyame Mail", augments={'Path: B',}},
+    hands={ name="Nyame Gauntlets", augments={'Path: B',}},
+    legs={ name="Nyame Flanchard", augments={'Path: B',}},
+    feet={ name="Nyame Sollerets", augments={'Path: B',}},
     neck="Fotia Gorget",
     waist="Orpheus's Sash",
     left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
     right_ear="Lugra Earring +1",
     left_ring="Gere Ring",
     right_ring="Epaminondas's Ring",
-    back={ name="Andartia's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','Weapon skill damage +10%',}},
+    back={ name="Andartia's Mantle", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','Weapon skill damage +10%',}},
 	})
 
     sets.precast.WS['Blade: Hi'] = set_combine(sets.precast.WS,
@@ -159,22 +159,69 @@ function init_gear_sets()
 
 
     sets.precast.WS['Aeolian Edge'] = {
-	ammo="Ghastly Tathlum +1",
+	ammo="Seeth. Bomblet +1",
     head={ name="Mochi. Hatsuburi +3", augments={'Enhances "Yonin" and "Innin" effect',}},
-    body="Nyame Mail",
-    hands="Nyame Gauntlets",
-    legs="Nyame Flanchard",
-    feet={ name="Mochi. Kyahan +3", augments={'Enh. Ninj. Mag. Acc/Cast Time Red.',}},
+    body={ name="Nyame Mail", augments={'Path: B',}},
+    hands={ name="Nyame Gauntlets", augments={'Path: B',}},
+    legs={ name="Nyame Flanchard", augments={'Path: B',}},
+    feet={ name="Nyame Sollerets", augments={'Path: B',}},
     neck="Fotia Gorget",
     waist="Orpheus's Sash",
-    left_ear="Friomisi Earring",
-    right_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
-    left_ring="Dingir Ring",
+    left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
+    right_ear="Lugra Earring +1",
+    left_ring="Gere Ring",
     right_ring="Epaminondas's Ring",
     back={ name="Andartia's Mantle", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','Weapon skill damage +10%',}},
 }
 
-    
+    sets.precast.WS['Blade: Ten'] = {
+	ammo="Seeth. Bomblet +1",
+    head="Mpaca's Cap",
+    body={ name="Nyame Mail", augments={'Path: B',}},
+    hands={ name="Nyame Gauntlets", augments={'Path: B',}},
+    legs={ name="Mochi. Hakama +3", augments={'Enhances "Mijin Gakure" effect',}},
+    feet={ name="Nyame Sollerets", augments={'Path: B',}},
+    neck="Rep. Plat. Medal",
+    waist={ name="Sailfi Belt +1", augments={'Path: A',}},
+    left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
+    right_ear="Lugra Earring +1",
+    left_ring="Gere Ring",
+    right_ring="Epaminondas's Ring",
+    back={ name="Andartia's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','Weapon skill damage +10%',}},
+	}
+	
+	sets.precast.WS['Savage Blade'] = {
+	ammo="Seeth. Bomblet +1",
+    head="Mpaca's Cap",
+    body={ name="Nyame Mail", augments={'Path: B',}},
+    hands={ name="Nyame Gauntlets", augments={'Path: B',}},
+    legs={ name="Mochi. Hakama +3", augments={'Enhances "Mijin Gakure" effect',}},
+    feet={ name="Nyame Sollerets", augments={'Path: B',}},
+    neck="Rep. Plat. Medal",
+    waist={ name="Sailfi Belt +1", augments={'Path: A',}},
+    left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
+    right_ear="Lugra Earring +1",
+    left_ring="Gere Ring",
+    right_ring="Epaminondas's Ring",
+    back={ name="Andartia's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','Weapon skill damage +10%',}},
+	}
+	
+	sets.precast.WS['Blade: Yu'] = {
+	ammo="Seeth. Bomblet +1",
+    head={ name="Mochi. Hatsuburi +3", augments={'Enhances "Yonin" and "Innin" effect',}},
+    body={ name="Nyame Mail", augments={'Path: B',}},
+    hands={ name="Nyame Gauntlets", augments={'Path: B',}},
+    legs={ name="Nyame Flanchard", augments={'Path: B',}},
+    feet={ name="Nyame Sollerets", augments={'Path: B',}},
+    neck="Fotia Gorget",
+    waist="Orpheus's Sash",
+    left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
+    right_ear="Lugra Earring +1",
+    left_ring="Gere Ring",
+    right_ring="Epaminondas's Ring",
+    back={ name="Andartia's Mantle", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','Weapon skill damage +10%',}},
+	}
+	
     --------------------------------------
     -- Midcast sets
     --------------------------------------
